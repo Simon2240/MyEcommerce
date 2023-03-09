@@ -1,0 +1,45 @@
+.cardItem{
+    padding-top: 15rem;
+    position: relative;
+    width: 100%;
+    min-height: 90.7vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-direction: row;
+    
+}
+
+.cardItem img{
+    position: relative;
+    width: 450px;
+    height: 100%;
+    object-fit: contain;
+}
+
+.boxInfoProd{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+    text-align: center;
+    width: 90rem;
+}
+
+.title h2{
+    font-size: 4rem;
+    text-align: center;
+    line-height: 6rem;
+}
+
+.descripcionProd p{
+    font-size: 2.1rem;
+    padding: 2rem 3rem;
+    letter-spacing: 1px;
+}
+
+.price p{
+    font-size: 4rem;
+}

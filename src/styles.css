@@ -1,58 +1,142 @@
-header{
-    background-color: rgba(211, 192, 18, 0.849);
-    z-index: 999;
-    position: fixed;
-    top: 0%;
-    width: 90%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 15px 50px;
-    transition: 0.5s ease;
-}
-header .brand {
-    color: #000000;
-    margin-top: 2.5%;
-    font-weight: 700;
-    font-size: 1.4rem;
-    font-weight: 300;
-    color: #000000;
-    text-transform: uppercase;
-    text-decoration: none;
-}
-header .navigation {
-    position: relative;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
-header .navigation .navigation-items a {
+html{
+    font-size: 62.5%;
+}
+
+main {
+    overflow: hidden;
+}
+
+/* NAV BAR */
+
+header{
+    width: 100%;
+    height: 9rem;
+    background-color: rgba(0, 86, 247, 0.795);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 2rem;
+}
+
+.brand{
+    font-size: 2.1rem;
+    color: rgba(0, 0, 0, 0.938);
+    letter-spacing: 1px;
     position: relative;
-    color: #080808;
-    font-size: 1.1em;
-    font-weight: 00;
     text-decoration: none;
-    margin-left: 30px;
-    transition: 0.3s ease;
-    top: 0.6rem;
+    font-weight: bold;
+    width: 50%;
 }
-header .navigation .navigation-items a:before {
-    content: '';
-    position: absolute;
-    background: rgba(194, 166, 8, 0.666);
-    width: 0;
-    height: 1px;
-    bottom: 0;
-    left: 0;
-    transition: 0.3s ease;
+
+.navigation{
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
 }
+
+.navigation ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    padding-top: .6rem;
+}
+
+.navigation li{
+    margin: 0 1rem;
+    padding-right: 2rem;
+}
+
+.direcciones{
+    text-decoration: none;
+    color: black;
+    font-size: 2.1rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
 .material-symbols-outlined{
-    margin-top: 1rem;
-    width: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
+@media screen and ( max-width: 600px) {
+    
+    .brand{
+        font-size: 2rem;
+        display: flex;
+        justify-content: center;
+    }
+
+    .direcciones{
+        font-size: 1.7rem;
+    }
+
+    .navigation li{
+        margin: 0  .5rem;
+        padding-right: 2rem;
+    }
+
+    .navigation ul{
+        margin-top: 1rem;
+    }
+}
+
+@media screen and ( max-width: 380px) {
+    
+    .brand{
+        font-size: 1.8rem;
+        display: flex;
+        justify-content: center;
+        padding-left: 1.6rem;
+    }
+
+    .direcciones{
+        font-size: 1.5rem;
+    }
+
+    .navigation li{
+        margin: 0 .3rem;
+        padding-right: 1rem;
+    }
+
+    .navigation ul{
+        margin-top: 1rem;
+    }
+}
+
+
+/* INDEX */
+
 .saludo{
     font-size: 2rem;
     padding-left: 10px;
     margin-top: 10rem;
 }
-html{
-    background-color: rgba(182, 182, 182, 0.596);
+.card{
+    display: flex;
+    flex-direction: row;
+    width: 60%;
+    gap: 2rem;
+    margin: 10px;
+    padding: 20px;
+    
 }
+.card img{
+    width: 20%;
+}
+
+
+
+

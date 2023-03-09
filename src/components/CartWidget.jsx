@@ -1,10 +1,10 @@
 import React from 'react'
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 const CartWidget = () => {
     return (
         <div>
-            <span class="material-symbols-outlined">shopping_cart</span>
-            <span>2</span>
+            <span className="material-symbols-outlined">shopping_cart</span>
         </div>
     );
 }
